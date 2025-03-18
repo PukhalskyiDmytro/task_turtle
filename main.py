@@ -21,3 +21,9 @@ class Dial:
         self.bigHand.draw(self.minutes)
         for i in range(0, 11):
             self.digits[i].draw(i+1)
+
+    def tick(self):
+        self.minutes += 1
+        if self.minutes == 60:
+            self.hours += 1
+            self.minutes -= 60
