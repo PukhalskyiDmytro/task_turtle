@@ -16,7 +16,7 @@ class Dial:
             time.sleep(t)
 
     def draw(self):
-        self.draw()
+        self.tick()
         self.smallHand.draw(self.hours)
         self.bigHand.draw(self.minutes)
         for i in range(0, 11):
