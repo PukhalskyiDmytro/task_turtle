@@ -21,7 +21,3 @@ class Dial:
         self.bigHand.draw(self.minutes)
         for i in range(0, 11):
             self.digits[i].draw(i+1)
-
-
-    def tick(self):
-        pass
